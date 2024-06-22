@@ -1,0 +1,75 @@
+body {
+    background-color: hsl(148, 38%, 91%);
+}
+
+text { color: hsl(169, 82%, 27%); }
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;;
+}
+.sub-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding: 25px;
+    width: 75%;
+    margin-block: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {font-weight: bold;}
+
+input {
+    border-color: hsl(169, 82%, 27%);
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+}
+
+#submit {
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-weight: bold;
+    height: auto;
+    padding: 10px;
+}
+
+.double { margin-inline: 5px; width: 45%;}
+.single { width: 95%;}
+textarea {text-decoration: none;}
+.title {margin-inline-end: auto;}
+#message { height: 100px;}
+
+.choice {
+    border : 2px solid black;
+    border-radius: 5px;
+    display: block;
+    font-size: 10px;    
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.attribution { margin: 10px;}
+
+.terms-condition { display: flex; flex-direction: row; gap: 10px;}

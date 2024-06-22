@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel = "stylesheet" href = "index.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class = "container">
+    <div class = "sub-container">
+      <h1 class = "title">Contact Us</h1>
+        <form action = "" method = "get">
+          <div class="form-section double">
+            <label for = "first-name">First Name *</label>
+            <input type = "text" id = "first-name">
+          </div>
+          <div class = "form-section double">
+            <label for = "last-name">Last Name *</label>
+            <input type = "text" id = "last-name">
+          </div>
+          <div class = "form-section single">
+            <label for = "email-address">Email Address *</label>
+            <input type = "text" id = "email-address">
+          </div>
+          <div class="form-section double">
+            <label for = "query-type">Query Type *</label>
+            <div class="choice">
+              <input type = "radio" id = "general-inquiry">
+              <label for = "general-inquiry">General Inquiry</label>
+            </div>
+          </div>
+          <div class = "form-section double">
+            <label for = "support-request">‎ </label>
+            <div class="choice">
+              <input type= "radio" id = "support-request">
+              <label for = "support-request">Support Request</label>
+            </div>
+          </div>
+          <div class = "form-section single">
+            <label for = "message">Message *</label>
+            <input type = "textarea" id = "message" >
+          </div>
+          <div class = "terms-condition">
+            <input type = "checkbox" id = "terms" >
+            <label for = "terms">I consent to being contacted by the team. *</label>
+          </div>
+          <div class = "form-section single">
+            <input type = "submit" id = "submit" >
+          </div>
+        </form>
+    </div>
+    
+  </div>
+</body>
+</html>
