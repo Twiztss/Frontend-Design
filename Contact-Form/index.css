@@ -15,35 +15,80 @@ text { color: hsl(169, 82%, 27%); }
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 600px;
-    justify-content: space-evenly;
-    padding: 10px;
-    padding: 25px;
-    width: 75%;
+    height: auto;
     margin-block: 100px;
+    padding: 25px;
+    width: 80%;
 }
 
 form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-evenly;
+    gap: 15px;
+    justify-content: center;
 }
 
 .form-section {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 2.5%;
+    width: 100%;
 }
 
-label {font-weight: bold;}
+.name {
+    width: 50%;
+}
+
+.email {
+    width: 100%;
+}
+
+.query {
+    width: 100%;
+}
+
+.query > * {
+    display: inline-flex;
+    gap: 3.75%;
+}
+
+.sub-query {
+    width: 100%;
+}
+
+.message {
+    width: 100%;;
+}
+
+label {
+    font-weight: bold;
+}
 
 input {
     border-color: hsl(169, 82%, 27%);
     border-radius: 5px;
     height: 25px;
     width: 100%;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid hsl(169, 82%, 27%);
+    display: flex;
+    list-style: none;
+    padding: 5px 0px 5px 5px;
+    width: 50%;
+}
+
+input[type = "radio"] {
+    width: auto;
+}
+
+input[type = "checkbox"] {
+    width: auto;
 }
 
 #submit {
@@ -54,22 +99,15 @@ input {
     padding: 10px;
 }
 
-.double { margin-inline: 5px; width: 45%;}
-.single { width: 95%;}
+.terms-condition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 textarea {text-decoration: none;}
 .title {margin-inline-end: auto;}
 #message { height: 100px;}
 
-.choice {
-    border : 2px solid black;
-    border-radius: 5px;
-    display: block;
-    font-size: 10px;    
-    padding: 2px;
-    text-align: center;
-    width: 100%;
-}
-
 .attribution { margin: 10px;}
-
-.terms-condition { display: flex; flex-direction: row; gap: 10px;}

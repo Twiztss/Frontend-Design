@@ -14,43 +14,54 @@
   </style>
 </head>
 <body>
+  <!-- Main Container -->
   <div class = "container">
+    <!-- Main Contact Form -->
     <div class = "sub-container">
       <h1 class = "title">Contact Us</h1>
-        <form action = "" method = "get">
-          <div class="form-section double">
-            <label for = "first-name">First Name *</label>
-            <input type = "text" id = "first-name">
-          </div>
-          <div class = "form-section double">
-            <label for = "last-name">Last Name *</label>
+        <!-- Form Informations -->
+        <form action = "#" method = "post">
+          <!-- Form Double : One row of two components -->
+          <div class="form-section">
+            <div class = "name">
+              <label for = "first-name">First Name *</label>
+              <input type = "text" id = "first-name">
+            </div>
+            <div class = "notif"></div>
+            <div class="name">
+              <label for = "last-name">Last Name *</label>
             <input type = "text" id = "last-name">
-          </div>
-          <div class = "form-section single">
-            <label for = "email-address">Email Address *</label>
-            <input type = "text" id = "email-address">
-          </div>
-          <div class="form-section double">
-            <label for = "query-type">Query Type *</label>
-            <div class="choice">
-              <input type = "radio" id = "general-inquiry">
-              <label for = "general-inquiry">General Inquiry</label>
+            <div class = "notif"></div>
             </div>
           </div>
-          <div class = "form-section double">
-            <label for = "support-request">‎ </label>
-            <div class="choice">
-              <input type= "radio" id = "support-request">
-              <label for = "support-request">Support Request</label>
+          <!-- Form Single : One row of one component -->
+          <div class = "form-section">
+            <div class = "email">
+                <label for = "email-address">Email Address *</label>
+                <input type = "text" id = "email-address">
+              <div class = "notif"></div>
+            </div>
+          </div>          
+          <div class="form-section">
+            <div class="query">
+              <label for = "query-type">Query Type *</label>
+              <div class = "sub-query">
+                <li><input type = "radio" id = "general-inquiry"><label for = "general-inquiry">General Inquiry</label></li>
+                <li><input type = "radio" id = "general-inquiry"><label for = "support request">Support Request</label></li>
+              </div>
             </div>
           </div>
           <div class = "form-section single">
-            <label for = "message">Message *</label>
-            <input type = "textarea" id = "message" >
+            <div class="block message">
+              <label for = "message">Message *</label>
+              <input type = "textarea" id = "message" >
+            </div>
           </div>
-          <div class = "terms-condition">
-            <input type = "checkbox" id = "terms" >
-            <label for = "terms">I consent to being contacted by the team. *</label>
+          <div class = "form-section">
+            <div class = "terms-condition">
+              <input type = "checkbox" id = "terms" >
+              <label for = "terms">I consent to being contacted by the team. *</label>
+            </div>
           </div>
           <div class = "form-section single">
             <input type = "submit" id = "submit" >
