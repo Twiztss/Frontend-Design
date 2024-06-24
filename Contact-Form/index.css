@@ -1,15 +1,12 @@
-body {
-    background-color: hsl(148, 38%, 91%);
-}
-
-text { color: hsl(169, 82%, 27%); }
+body { background-color: hsl(148, 38%, 91%); font-family: 'Karla', sans-serif; }
 
 .container {
     display: flex;
     height: 100%;
     justify-content: center;
-    width: 100%;;
+    width: 100%;
 }
+
 .sub-container {
     background-color: white;
     border-radius: 10px;
@@ -18,7 +15,7 @@ text { color: hsl(169, 82%, 27%); }
     height: auto;
     margin-block: 100px;
     padding: 25px;
-    width: 80%;
+    width: 500px;
 }
 
 form {
@@ -36,35 +33,6 @@ form {
     width: 100%;
 }
 
-.name {
-    width: 50%;
-}
-
-.email {
-    width: 100%;
-}
-
-.query {
-    width: 100%;
-}
-
-.query > * {
-    display: inline-flex;
-    gap: 3.75%;
-}
-
-.sub-query {
-    width: 100%;
-}
-
-.message {
-    width: 100%;;
-}
-
-label {
-    font-weight: bold;
-}
-
 input {
     border-color: hsl(169, 82%, 27%);
     border-radius: 5px;
@@ -72,14 +40,38 @@ input {
     width: 100%;
 }
 
+.name { width: 50%; display: flex; flex-direction: column; gap: 5px; }
+
+.email { width: 100%; display: flex; flex-direction: column; gap: 5px; }
+
+.query { width: 100%; display: flex; flex-direction: column; gap: 5px; }
+
+.query > * {
+    display: inline-flex;
+    gap: 3.75%;
+}
+
+.sub-query { width: 100%; }
+
+.message { 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
+
+.message > #message { height: 100px;}
+
+h1, label { font-weight: bold; color : #4c4c4c; bottom: 10px;}
+
 li {
     align-items: center;
-    justify-content: center;
     border-radius: 5px;
     border: 2px solid hsl(169, 82%, 27%);
     display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 10px 5px 5px;
     width: 50%;
 }
 
@@ -97,17 +89,53 @@ input[type = "checkbox"] {
     font-weight: bold;
     height: auto;
     padding: 10px;
+    width: 100%;
 }
 
 .terms-condition {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 10px;
 }
 
-textarea {text-decoration: none;}
-.title {margin-inline-end: auto;}
-#message { height: 100px;}
+button{
+    background: hsl(169, 82%, 27%);
+    border-radius: 5px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+}
+button:hover{
+    background: hsl(169, 94%, 13%);
+    cursor: pointer;
+}
+button:active{
+    opacity: .5;
+    transition: all .5s ease-in-out;
+}
 
 .attribution { margin: 10px;}
+
+.form-completed {
+    position: absolute;
+  top: 0px;
+  right: center;
+}
+
+.completed {
+    background: hsl(169, 82%, 27%);
+    border-radius: 10px;
+    color: #fff;
+    height: 100px;
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
+    right: center;
+    top: 50px;
+    transition: all .5s ease-in-out;
+    width: 350px;
+}

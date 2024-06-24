@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel = "stylesheet" href = "index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,6 +19,7 @@
 <body>
   <!-- Main Container -->
   <div class = "container">
+    <div class="form-completed"></div>
     <!-- Main Contact Form -->
     <div class = "sub-container">
       <h1 class = "title">Contact Us</h1>
@@ -49,9 +53,10 @@
                 <li><input type = "radio" id = "general-inquiry"><label for = "general-inquiry">General Inquiry</label></li>
                 <li><input type = "radio" id = "general-inquiry"><label for = "support request">Support Request</label></li>
               </div>
+              <div class="notif" id = "radio-notif"></div>
             </div>
           </div>
-          <div class = "form-section single">
+          <div class = "form-section">
             <div class="block message">
               <label for = "message">Message *</label>
               <input type = "textarea" id = "message" >
@@ -59,13 +64,12 @@
           </div>
           <div class = "form-section">
             <div class = "terms-condition">
-              <input type = "checkbox" id = "terms" >
-              <label for = "terms">I consent to being contacted by the team. *</label>
+              <input type = "checkbox" id = "terms-condition" >
+              <label for = "terms-condition">I consent to being contacted by the team. *</label>
             </div>
+            <div class = "notif" id = "terms-notif"></div>
           </div>
-          <div class = "form-section single">
-            <input type = "submit" id = "submit" >
-          </div>
+          <button type = "submit">Submit</button>
         </form>
     </div>
     
