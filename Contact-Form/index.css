@@ -1,7 +1,9 @@
 body { background-color: hsl(148, 38%, 91%); font-family: 'Karla', sans-serif; }
 
 .container {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     height: 100%;
     justify-content: center;
     width: 100%;
@@ -20,7 +22,6 @@ body { background-color: hsl(148, 38%, 91%); font-family: 'Karla', sans-serif; }
 
 form {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
@@ -29,58 +30,92 @@ form {
 .form-section {
     display: flex;
     flex-direction: row;
-    gap: 2.5%;
+    gap: 5.625%;
     width: 100%;
 }
 
 input {
-    border-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+    border: 2px solid hsl(186, 25%, 59%);
     border-radius: 5px;
     height: 25px;
-    width: 100%;
+    width: 98.75%;
 }
 
-.name { width: 50%; display: flex; flex-direction: column; gap: 5px; }
+.name { width: 47.5%; display: flex; flex-direction: column; gap: 10px; }
 
-.email { width: 100%; display: flex; flex-direction: column; gap: 5px; }
+.email { width: 100%; display: flex; flex-direction: column; gap: 10px; }
 
-.query { width: 100%; display: flex; flex-direction: column; gap: 5px; }
+.query { width: 100%; display: flex; flex-direction: column; gap: 10px; }
 
 .query > * {
     display: inline-flex;
     gap: 3.75%;
 }
 
-.sub-query { width: 100%; }
+.sub-query {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .message { 
-    width: 100%;
-    height: 100px;
     display: flex;
     flex-direction: column;
-    gap: 5px; }
+    gap: 5px; 
+    height: auto;
+    width: 100%;
+}
 
-.message > #message { height: 100px;}
+.message > #message { 
+    border-radius: 5px;
+    height: 100px;
+    margin: 5px auto;
+    outline: none;
+    overflow: hidden;
+    padding: 5px 0px 5px 5px;
+    resize: none;
+    width: 98.75%; 
+}
 
-h1, label { font-weight: bold; color : #4c4c4c; bottom: 10px;}
+.message > #message:focus{
+    border: 2px solid hsl(186, 15%, 59%);
+    outline: none;
+    overflow: hidden;
+}
+
+h1, label {
+    bottom: 10px;
+    color : #4c4c4c;
+    font-weight: bold;
+}
 
 li {
     align-items: center;
     border-radius: 5px;
-    border: 2px solid hsl(169, 82%, 27%);
+    border: 2px solid hsl(186, 25%, 59%);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
-    padding: 5px 10px 5px 5px;
-    width: 50%;
+    padding: 5px 30px 5px 10px;
+    width: 100%;
+}
+
+li:hover {
+    cursor: pointer;
+    border-color : hsl(169, 82%, 27%);
 }
 
 input[type = "radio"] {
     width: auto;
+    margin-inline-end: 10px;
 }
 
 input[type = "checkbox"] {
-    width: auto;
+    width: 15px;
+    height: 15px;
+    accent-color: hsl(169, 82%, 27%);
+
 }
 
 #submit {
@@ -109,21 +144,45 @@ button{
     outline: none;
     width: 100%;
 }
+
 button:hover{
     background: hsl(169, 94%, 13%);
     cursor: pointer;
 }
+
 button:active{
     opacity: .5;
     transition: all .5s ease-in-out;
 }
 
-.attribution { margin: 10px;}
+.attribution {
+    margin: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Warning Message */
+
+.notif {
+    font-size: 12px;
+    color: hsl(0, 66%, 54%);    
+}
+
+.incomplete { border: 1px solid hsl(0, 66%, 54%); }
+
+.complete { border: 1px solid hsl(169, 82%, 27%); }
+
+
+.msg{ border: 2px solid hsl(0, 66%, 54%); }
+
+/* Form Completed Message */
 
 .form-completed {
     position: absolute;
-  top: 0px;
-  right: center;
+    right: center;
+    top: 0px;
 }
 
 .completed {
@@ -138,4 +197,48 @@ button:active{
     top: 50px;
     transition: all .5s ease-in-out;
     width: 350px;
+}
+
+.completed h2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom : 5px;
+}
+
+.completed h2 img {
+    width: 15px;
+    height: 15px;
+}
+
+.completed p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Media */
+
+@media screen and (width <= 550px) {
+    .container {
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .sub-container { width: 80%; height: auto; }
+
+    .form-section {flex-direction: column; }
+
+    .name { margin-block: 5px; width: 100%;}
+
+    .sub-query {
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 20px;
+        width: 87.5%;
+    }
+
+    .message > #message { height: 300px; }
+    
 }

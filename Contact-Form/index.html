@@ -9,12 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <!-- Main Container -->
@@ -30,12 +24,12 @@
             <div class = "name">
               <label for = "first-name">First Name *</label>
               <input type = "text" id = "first-name">
+              <div class = "notif"></div>
             </div>
-            <div class = "notif"></div>
             <div class="name">
               <label for = "last-name">Last Name *</label>
-            <input type = "text" id = "last-name">
-            <div class = "notif"></div>
+              <input type = "text" id = "last-name">
+              <div class = "notif"></div>
             </div>
           </div>
           <!-- Form Single : One row of one component -->
@@ -43,7 +37,7 @@
             <div class = "email">
                 <label for = "email-address">Email Address *</label>
                 <input type = "text" id = "email-address">
-              <div class = "notif"></div>
+                <div class = "notif"></div>
             </div>
           </div>          
           <div class="form-section">
@@ -57,9 +51,10 @@
             </div>
           </div>
           <div class = "form-section">
-            <div class="block message">
+            <div class="message">
               <label for = "message">Message *</label>
               <input type = "textarea" id = "message" >
+              <div class="notif"></div>
             </div>
           </div>
           <div class = "form-section">
@@ -72,7 +67,11 @@
           <button type = "submit">Submit</button>
         </form>
     </div>
-    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Twiztss">Twiztss</a>.
+      <script src= "index.js"></script>
+    </div>
   </div>
 </body>
 </html>
