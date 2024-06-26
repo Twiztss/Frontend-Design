@@ -15,7 +15,7 @@ body {
     width: 375px;
 }
 
-.card > h1 {
+.card {
     color: hsl(218, 44%, 22%);
     font-weight: 700;
 }
@@ -34,3 +34,17 @@ img {
 }
 .attribution { font-size: 11px; text-align: center; margin: 10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (width < 550px) {
+    .card {
+        width: 300px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card { font-size: 0.8rem; }
+    .card > p { font-size: 1.1rem;}
+}
