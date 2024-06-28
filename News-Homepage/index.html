@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel = "icon" type = "image/png" sizes = "32x32" href = "./assets/images/favicon-32x32.png">
   <link rel = "stylesheet" href = "index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 
 </head>
@@ -21,6 +24,7 @@
           <a href = "#">Trending</a>
           <a href = "#">Categories</a>
         </div>
+        <div class="burger"></div>
       </div>
       <div class = "wrapper">
         <div class="main-news">
@@ -35,19 +39,27 @@
         </div>
         <div class = "trending-news">
           <h2>New</h2>
-          <a>Hydrogen vs Electric Cars</a>
-          <p>Will Hydrogen fueled cars ever catch up to EVs?</p><hr>
-          <a>The downside of AI Artistry</a>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p><hr>
-          <a>Is VC Funding Drying Up?</a>
-          <p>Private Funding by VC firms is down 50% YOY. We take a look at what that means?</p>
+          <div class="trending-message">
+            <a>Hydrogen vs Electric Cars</a>
+            <p>Will Hydrogen fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="trending-message">
+            <a>The downside of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="trending-message">
+            <a>Is VC Funding Drying Up?</a>
+            <p>Private Funding by VC firms is down 50% YOY. We take a look at what that means?</p>
+          </div>
         </div>
       </div>
       <div class = "wrapper">
         <div class = "ranking-news">
           <img src = "./assets/images/image-retro-pcs.jpg" alt = "" class="ranking-banner">
           <div class = "ranking-message">
-            <h3>01</h1>
+            <h1>01</h1>
             <a>Reviving Retro PCs</a>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
@@ -55,7 +67,7 @@
         <div class = "ranking-news">
           <img src = "./assets/images/image-top-laptops.jpg" alt = "" class="ranking-banner">
           <div class = "ranking-message">
-            <h3>02</h1>
+            <h1>02</h1>
             <a>Top 10 Laptops of 2022</a>
             <p>Our best picks for various needs and budgets.</p>
           </div>
@@ -63,7 +75,7 @@
         <div class="ranking-news">
           <img src = "./assets/images/image-gaming-growth.jpg" alt = "" class="ranking-banner">
           <div class = "ranking-message">
-            <h3>03</h1>
+            <h1>03</h1>
             <a>The Growth of Gaming</a>
             <p>How the pandemics has sparked fresh opportunieties?</p>
 
