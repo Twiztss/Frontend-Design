@@ -58,6 +58,7 @@
   - Space tourism website consists of main page, destinations, crew members, technology.
   - Includes responsive design compatible with mobile and tablet view.
   - Challenge link : [News Homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
+  - Ongoing . . .
 
 ### Checklist-3
   - Navigation Bar
