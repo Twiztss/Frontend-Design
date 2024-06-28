@@ -1,0 +1,118 @@
+* { font-family: Inter; }
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5%;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 5%;
+}
+
+.wrapper {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.wrapper:nth-child(2) { height: 500px; }
+
+.main-text {
+    /* border : 1px solid black; */
+    width: 40%;
+}
+
+.main-text > h1 { color: hsl(300, 43%, 22%); font-weight: 700; }
+.main-text > p { color: Dark hsl(303, 10%, 53%); font-weight: 500; }
+
+
+.main-review {
+    /* border : 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.review-card {
+    width: 80%;
+    border-radius : 10px;
+    background-color: hsl(300, 24%, 96%);
+    height: 30%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-card > * {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.review-text {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 20px;
+}
+
+.review-card:first-child { align-self: flex-start; }
+
+.review-card:nth-child(3) { align-self: flex-end; }
+
+.review-card { color : hsl(300, 43%, 22%); font-weight: 500;}
+
+.client-review {
+    background-color: hsl(300, 43%, 22%);
+    width: 30%;
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.client-review:first-child { align-self: flex-start; }
+
+.client-review:nth-child(3) { align-self: flex-end; }
+
+.client-profile {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    height: 50%;
+}
+
+
+.client-profile > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+}
+
+.role > p:first-child { font-weight : 700; }
+.role > p:nth-child(2) { color : hsl(333, 80%, 67%) }
+
+.quote {
+    height : 50%;
+    color: hsl(0, 0%, 100%);
+}
+
+

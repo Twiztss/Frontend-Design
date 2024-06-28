@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- displays site properly based on user's device -->
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "./images/favicon-32x32.png"/>
     <link rel = "stylesheet" href = "style.css">
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel = "stylesheet" href = "index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Social proof section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,38 +23,108 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
   </head>
   <body>
-    10,000+ of our users love our products.
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <div class="sub-container">
+        <div class="wrapper">
+          <div class="main-text">
+            <h1>10,000+ of our users love our products.</h1>
+            <p>
+              We only provide great products combined with excellent customer service.
+              See what our satisfied customers are saying about our services.
+            </p>
+          </div>
+          <div class="main-review">
+            <div class="review-card">
+              <div class="review-text">
+                <div class="star">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                </div>
+                Rated 5 Stars in Reviews
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-text">
+                <div class="star">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                </div>
+                Rated 5 Stars in Report Guru
+              </div>  
+            </div>
+            <div class="review-card">
+              <div class="review-text">
+                <div class="star">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                  <img src="images/icon-star.svg" alt="">
+                </div>
+                Rated 5 Stars in BestTech
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="client-review">
+            <div class="client-profile">
+              <img src="images/image-colton.jpg">
+              <div class="role">
+                <p>Colton Smith</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <div class="quote">
+              "We needed the same printed design as the one we had ordered a week prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!"
+            </div>
+          </div>
+          <div class="client-review">
+            <div class="client-profile">
+              <img src = "images/image-irene.jpg">
+              <div class="role">
+                <p>Irene Roberts</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <div class="quote">
+              "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+            </div>
+          </div>
+          <div class="client-review">
+            <div class="client-profile">
+              <img src="images/image-anne.jpg">
+              <div class="role">
+                <p>Anne Wallace</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <div class="quote">
+              "Put an order with this company and can only praise them for the very high
+        standard. Will definitely use them again and recommend them to everyone!"          
+            </div>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/Twiztss">Twiztss</a>.
+        </div>
+      </div>
     </div>
   </body>
 </html>
