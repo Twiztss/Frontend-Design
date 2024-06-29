@@ -29,7 +29,7 @@ form {
 
 .form-section {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     gap: 5.625%;
     width: 100%;
 }
@@ -170,9 +170,9 @@ button:active{
     color: hsl(0, 66%, 54%);    
 }
 
-.incomplete { border: 1px solid hsl(0, 66%, 54%); }
+.incomplete { border: 2px solid hsl(0, 66%, 54%); }
 
-.complete { border: 1px solid hsl(169, 82%, 27%); }
+.complete { border: 2px solid hsl(169, 82%, 27%); }
 
 
 .msg{ border: 2px solid hsl(0, 66%, 54%); }
@@ -183,6 +183,11 @@ button:active{
     position: absolute;
     right: center;
     top: 0px;
+    background-color: hsl(169, 82%, 27%);
+    width: 37.5%;
+    height: 125px;
+    border-radius: 10px;
+    color: white;
 }
 
 .completed {

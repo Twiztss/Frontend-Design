@@ -13,7 +13,7 @@
 <body>
   <!-- Main Container -->
   <div class = "container">
-    <div class="form-completed"></div>
+    <div class="template"></div>
     <!-- Main Contact Form -->
     <div class = "sub-container">
       <h1 class = "title">Contact Us</h1>
@@ -36,7 +36,7 @@
           <div class = "form-section">
             <div class = "email">
                 <label for = "email-address">Email Address *</label>
-                <input type = "text" id = "email-address">
+                <input type = "text" id = "email-address" class = "">
                 <div class = "notif"></div>
             </div>
           </div>          
@@ -44,8 +44,8 @@
             <div class="query">
               <label for = "query-type">Query Type *</label>
               <div class = "sub-query">
-                <li><input type = "radio" id = "general-inquiry"><label for = "general-inquiry">General Inquiry</label></li>
-                <li><input type = "radio" id = "general-inquiry"><label for = "support request">Support Request</label></li>
+                <li><input type = "radio" id = "inquisition general"><label for = "general">General Inquiry</label></li>
+                <li><input type = "radio" id = "inquisition support"><label for = "support">Support Request</label></li>
               </div>
               <div class="notif" id = "radio-notif"></div>
             </div>
@@ -61,8 +61,8 @@
             <div class = "terms-condition">
               <input type = "checkbox" id = "terms-condition" >
               <label for = "terms-condition">I consent to being contacted by the team. *</label>
+              <div class = "notif" id = "terms-notif"></div>
             </div>
-            <div class = "notif" id = "terms-notif"></div>
           </div>
           <button type = "submit">Submit</button>
         </form>
