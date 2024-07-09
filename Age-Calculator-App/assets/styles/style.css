@@ -64,6 +64,7 @@ input {
     outline: none;
     width: 100px;
     font-size: 32px;
+    font-weight: 700;
     border: 1px solid var(--Light-grey)
 }
 
@@ -119,6 +120,16 @@ hr {
     font-style: italic;
 }
 
+.active {
+    border-color: red;
+}
+
+.notif {
+    margin-top: 10px;
+    color: red;
+    font-style: italic;
+}
+
 span {
     color: var(--Purple);
 }
@@ -137,6 +148,6 @@ span {
 
 @media screen and (min-width : 751px) {
     .calc-btn {
-        margin-left: 500px;
+        margin-left: 350px;
     }
 }
