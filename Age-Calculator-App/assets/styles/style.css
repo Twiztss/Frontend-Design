@@ -1,0 +1,142 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+  }
+
+h6 {
+    letter-spacing: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body {
+    padding: 50px;
+    background-color: var(--Light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    background-color: var(--White);
+    padding: 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 125px;
+    width: 90%;
+    
+}
+
+.input {
+    display: flex;
+    margin-bottom: 25px;
+    color: var(--Smokey-grey);
+}
+
+input {
+    justify-self: flex-end;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius : 10px;
+    letter-spacing: 2px;
+    outline: none;
+    width: 100px;
+    font-size: 32px;
+    border: 1px solid var(--Light-grey)
+}
+
+hr {
+    border: none;
+    background-color: var(--Smokey-grey);
+    height: 2px;
+}
+
+.calc-btn {
+    display: flex;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-top: -125px;
+    margin-left: 500px;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Purple);
+}
+
+input:focus {
+    border-color: var(--Purple);
+    caret-color: var(--Purple);
+}
+
+.calc-btn:hover {
+    background-color: var(--Off-black);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.calc-btn:hover > img {
+    transform: translateY(-5px);
+    transition: ease-in-out 0.3s;
+}
+
+hr {
+    background-color: hsl(0, 0%, 86%);
+    width: 100%;
+}
+
+.display-calc {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 60px;
+    font-style: italic;
+}
+
+span {
+    color: var(--Purple);
+}
+
+@media screen and (max-width : 550px) {
+    .calc-btn {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (min-width : 551px) and (max-width : 750px) {
+    .calc-btn {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (min-width : 751px) {
+    .calc-btn {
+        margin-left: 500px;
+    }
+}
