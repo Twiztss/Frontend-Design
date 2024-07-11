@@ -20,6 +20,9 @@
   - [Description-4](#description-4)
   - [Checklist-4](#checklist-4)
 
+- [Blog-Preview-Card](#blog-preview-card)
+  - [Description-5](#description-5)
+
 ## Contact Form
 
 ### Description-1
@@ -75,6 +78,18 @@
   - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/Social-Proof-Section)
   - Ongoing . . .
 
+## Blog Preview Card
+
+### Description-5
+  - Create blog card containing thumbnail, title, description, and author profile, some of the part are similar to QR Code Component.
+  - This design gives understanding about viewport units, relative size, and root variables.
+  - Challenge link : [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
+  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/Blog-Preview-Card)
+
+### Checklist-5
+  - Main card
+  - Text alignment
+  - Responsive screen adjustment
 
 
 
