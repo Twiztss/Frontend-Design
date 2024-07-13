@@ -78,8 +78,9 @@
     gap: 20px;
     align-items: center;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 800;
     width: 100%;
+    margin-top: 10px;
 }
 
 .review-text > div {
@@ -167,7 +168,7 @@
     .main-review,
     .client-reviews {
         margin-top: 15px;
-        width: 80%;
+        width: 90%;
         text-align: center;
         gap: 20px;
     }
@@ -205,11 +206,15 @@
     .review-text > div {
         align-self: center;
         margin-right: 20%;
-        margin-bottom: -2.5%;
+        margin-bottom: -5%;
     }
 
     .review-text > p {
         text-align: center;
+    }
+
+    .client-profile {
+        margin-top : -10px ;
     }
 
     .client-review {
