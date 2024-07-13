@@ -1,95 +1,64 @@
-# Frontend-Design
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/banner.png" alt="Logo" width="auto" height="auto">
+  </a> <br><br>
+
+  <h1 align="center">Frontend Design</h1>
+
+  <p align="center">
+    An project aimed to improve and implement design skills using basic HTML/CSS/JS! <br> Some might also use external of libraries like Tailwind or DaisyUI <b>(Coming Soon) </b><br> 
+    <br />
+    <a href="https://github.com/Twiztss/Frontend-Design"><strong>Explore the project »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Twiztss/Frontend-Design/tree/main/Age-Calculator-App">Project Example</a>
+    ·
+    <a href="https://twiztss.github.io/Frontend-Design/Age-Calculator-App/">Project Preview</a>
+    ·
+    <a href="https://github.com/Twiztss/">Other Projects</a>
+  </p>
+</div>
+
+## About
+
+Basically, building a website or big project can be effective in overall designing skills. However, experiencing diverse type of small project designs can improve design skills without getting burnt out from large amount of work in single projects.
 - HTML/CSS/JavaScript Designs from https://www.frontendmentor.io
 - These practices helps in designing websites and increasing proficiency in Frontend.
 
+## Difficulty
+[![shield.io](https://img.shields.io/badge/Newbie-%23007bff.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
+[![shield.io](https://img.shields.io/badge/Junior-%23c7c000.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
+[![shield.io](https://img.shields.io/badge/Intermediate-%23f7dc6f.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
+[![shield.io](https://img.shields.io/badge/Advanced-%23ff9900.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
+[![shield.io](https://img.shields.io/badge/Guru-%23ff0000.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
+
+- Determined according to complexity and scripts used in the design, currently on Intermediate difficulty which will try to scale up the difficulty gradually.
+
+
 ## Projects
 
-- [Contact Form](#contact-form)
-  - [Description-2](#description-1)
-  - [Checklist-2](#checklist-2)
+[![shield.io](https://img.shields.io/badge/Newbie-%23007bff.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
 
-- [QR Code Component](#qr-code-component)
-  - [Description-2](#description-2)
-  - [Checklist-2](#checklist-2)
+- [QR Code Component](https://github.com/Twiztss/Frontend-Design/tree/main/QR-Code-Component)
+- [News Homepage](https://github.com/Twiztss/Frontend-Design/tree/main/News-Homepage)
+- [Social Proof Section](https://github.com/Twiztss/Frontend-Design/tree/main/Social-Proof-Section)
+- [Blog-Preview-Card](https://github.com/Twiztss/Frontend-Design/tree/main/Blog-Preview-Card)
 
-- [News Homepage](#news-homepage)
-  - [Description-3](#description-3)
-  - [Checklist-3](#checklist-3)
+<br>
 
-- [Social Proof Section](#social-proof-section)
-  - [Description-4](#description-4)
-  - [Checklist-4](#checklist-4)
+[![shield.io](https://img.shields.io/badge/Junior-%23c7c000.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
 
-- [Blog-Preview-Card](#blog-preview-card)
-  - [Description-5](#description-5)
+- [Contact Form](https://github.com/Twiztss/Frontend-Design/tree/main/Contact-Form)
+- [Age Calculator App](https://github.com/Twiztss/Frontend-Design/tree/main/Age-Calculator-App)
+- [Product List With Cart](https://github.com/Twiztss/Frontend-Design/tree/main/Product-List-With-Cart) (Ongoing)
 
-## Contact Form
+<br>
 
-### Description-1
-  - Create responsive contact form which shows completion message when completed.
-  - This includes notification when missing a required field or filled incorrectly.
-  - Challenge link : [Contact Form](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj)
-  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/Contact-Form)
+[![shield.io](https://img.shields.io/badge/Intermediate-%23f7dc6f.svg?style=for-the-badge&logo=shield.io&logoColor=white)](https://shield.io)
 
-### Checklist-1
-  - Main form (name, email address, etc.)
-  - Error notifications
-      - Missing field
-      - Misplaced format
-  - Success notification
-  - Hover animation
-  - Responsive screen adjusment
+- [Space Tourism Website](https://github.com/Twiztss/Frontend-Design/tree/main/Space-Tourism-Website) (Ongoing)
 
-## QR Code Component
 
-### Description-2
-  - Create QR code component with responsive web design which suitable for both desktop and mobile settings.
-  - Gives a brief understanding of what card UI components look like.
-  - Challenge link : [QR Code Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
-  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/QR-Code-Component)
-
-### Checklist-2
-  - Main card
-  - Text alignment
-  - Responsive screen adjustment
-
-## News Homepage
-
-### Description-3
-  - Space tourism website consists of main page, destinations, crew members, technology.
-  - Includes responsive design compatible with mobile and tablet view.
-  - Challenge link : [News Homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
-  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/News-Homepage)
-  - Ongoing . . .
-
-### Checklist-3
-  - Navigation Bar
-  - Main News
-  - News list section
-  - News ranking section
-  - Responsive screen adjustment
-
-## Social Proof Section
-
-### Description-4
-  - Basically a product review pages for displaying ratings and comments from the customers.
-  - Gives an understanding of staircase placement of UI components.
-  - Challenge link [Social Proof Section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
-  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/Social-Proof-Section)
-  - Ongoing . . .
-
-## Blog Preview Card
-
-### Description-5
-  - Create blog card containing thumbnail, title, description, and author profile, some of the part are similar to QR Code Component.
-  - This design gives understanding about viewport units, relative size, and root variables.
-  - Challenge link : [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
-  - Live site link : [Design's Live Site](https://twiztss.github.io/Frontend-Design/Blog-Preview-Card)
-
-### Checklist-5
-  - Main card
-  - Text alignment
-  - Responsive screen adjustment
 
 
 
