@@ -1,0 +1,167 @@
+body {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    color: white;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+hr {
+    border: 0.25px solid gray;
+    width: 100px;
+    position: fixed;
+    margin-left: 20%;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar > img {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    margin-left: 30px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    justify-self: flex-start;
+}
+
+.navbar > div {
+    display: flex;
+    background-color: gray;
+    padding: 0% 10%;
+    justify-content: center;
+    gap: 75px;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 3.75px );
+    -webkit-backdrop-filter: blur( 2px );
+}
+
+.content {
+    margin : 10%;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.content > div {
+    width: 75%;
+}
+
+.navbar > div > a {
+    text-decoration: none;
+    color: white;
+    padding-block: 50px;
+    height: 100%;
+    font-size : 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar > div > a:hover {
+    border-bottom: 2.5px solid white;
+    transition: 0.5s ease-out;
+}
+
+.planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.mar, .europa, .moon, .titan {
+    background-size: cover;
+}
+
+.mars {
+    background-image: url("../assets/destination/image-mars.png");
+    background-size: contain;
+}
+
+.europa {
+    background-image: url("../assets/destination/image-europa.png");
+}
+
+.moon {
+    background-image: url("../assets/destination/image-moon.png");
+}
+
+.titan {
+    background-image: url("../assets/destination/image-titan.png");
+}
+
+.inactive {
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    
+    body {
+        background: url("../assets/home/background-home-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 50px;
+        justify-self: center ;
+    }
+
+    .navbar > div {
+        padding: 0% 12.5%;
+        gap: 10%;
+    }
+
+    .navbar > div > a {
+        padding-block: 15%;
+    }
+
+    .navbar > div > a > p {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .planet {
+        margin-block: 10%;
+        width: 37.5%;
+        height: 37.5%;
+    }
+}
