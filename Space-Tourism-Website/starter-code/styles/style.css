@@ -1,9 +1,8 @@
 body {
-    background-image: url("../assets/home/background-home-desktop.jpg");
     color: white;
-    background-size: cover;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -19,9 +18,9 @@ body {
 
 hr {
     border: 0.25px solid gray;
-    width: 100px;
+    width: 37.5%;
     position: fixed;
-    margin-left: 20%;
+    margin-left: 7.5%;
     z-index: 1;
 }
 
@@ -55,14 +54,23 @@ hr {
 }
 
 .content {
-    margin : 10%;
+    margin : 2.5% 10%;
     padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
 }
 
-.content > div {
-    width: 75%;
+.planet-text, .crew-text, .tech-text {
+    width: 50%;
 }
+
+.planet-box, .crew-box, .tech-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .navbar > div > a {
     text-decoration: none;
@@ -86,48 +94,81 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
     aspect-ratio: 1;
-    background-color: white;
     border-radius: 50%;
     color: black;
     font-weight: 800;
     font-size: 32px;
-}
-
-.mar, .europa, .moon, .titan {
     background-size: cover;
 }
 
-.mars {
-    background-image: url("../assets/destination/image-mars.png");
-    background-size: contain;
+.planet > img {
+    width: 100%;
+    aspect-ratio: 1;
 }
 
-.europa {
-    background-image: url("../assets/destination/image-europa.png");
+.planet-menu {
+    display: flex;
+    justify-content: space-between;
 }
 
-.moon {
-    background-image: url("../assets/destination/image-moon.png");
+.planet-menu > p {
+    text-decoration: none;
+    color: white;
+    padding-block: 5px;
+    font-size : 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.titan {
-    background-image: url("../assets/destination/image-titan.png");
+.planet-menu > p:hover {
+    border-bottom: 2.5px solid white;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.planet-stat {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-1, .stat-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .inactive {
     display: none;
 }
 
-@media screen and (max-width:768px){
-    
-    body {
-        background: url("../assets/home/background-home-mobile.jpg");
-        background-size: cover;
-        height: 100vh;
-    }
+.crew-box > img {
+    width: 100%;
+}
+
+.pagination {
+    margin-top: 10%;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.tech-pagination {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    background-color: white;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px) {
 
     .content {
         flex-direction: column;
@@ -138,7 +179,6 @@ hr {
     }
 
     .navbar > div {
-        padding: 0% 12.5%;
         gap: 10%;
     }
 
@@ -159,9 +199,42 @@ hr {
         margin-top: 25px;
     }
 
+    .planet-menu {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .planet-box, .crew-box, .tech-box {
+        width: 75%;
+    }
+
+    .planet-text, .crew-text, .tech-text {
+        width: 75%;
+    }
+
     .planet {
         margin-block: 10%;
-        width: 37.5%;
-        height: 37.5%;
+        width: 75%;
+        aspect-ratio: 1;
+        align-self: center;
+    }   
+
+    .planet-stat {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .stat-1, .stat-2 {
+        text-align: center;
+    }
+
+    .crew-box {
+        width: 75%;
+        order : 1;
+    }
+
+    .pagination {
+        margin-left: 37.5%;
     }
 }

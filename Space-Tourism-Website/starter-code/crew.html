@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    body {
+      background-image: url("./assets/crew/background-crew-desktop.jpg");
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media screen and (max-width:768px) {
+    
+    body {
+        background: url("./assets/crew/background-crew-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html"><img class = "logo" src="./assets/shared/logo.svg" alt=""></a>
+      <hr>
+      <div>
+        <a href="index.html"><p>01</p> Home</a>
+        <a href="destination.html"><p>02</p> Destination</a>
+        <a href="crew.html"><p>03</p> Crew</a>
+        <a href="technology.html"><p>04</p> Technology</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="crew-text">
+        <p>02 Meet your crew</p>
+        <h3 id = "role">Commander</h3> 
+        <h1 id = "full-name">Douglas Gerald Hurley</h1>
+        <p id = "bio">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+          and former NASA astronaut. He launched into space for the third time as 
+          commander of Crew Dragon Demo-2.
+        </p>
+        <div class="pagination">
+          <p class = "dot" id = "commander" href=""></p>
+          <p class = "dot" id = "specialist" href=""></p>
+          <p class = "dot" id = "pilot" href=""></p>
+          <p class = "dot" id = "engineer" href=""></p>
+        </div>
+      </div>
+      <div class = "crew-box">
+          <img src="./assets/crew/image-douglas-hurley.png" alt="">
+      </div>
+    </div>   
+  </div>
+  <script src="scripts/script-crew.js"></script>
+</body>
+</html>

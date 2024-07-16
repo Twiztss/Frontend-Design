@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel = "stylesheet" href = "styles/style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    body {
+      background-image: url("./assets/destination/background-destination-desktop.jpg");
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media screen and (max-width:768px) {
+    
+    body {
+        background: url("./assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html"><img class = "logo" src="./assets/shared/logo.svg" alt=""></a>
+      <!-- <hr> -->
+      <div>
+        <a href="index.html"><p>01</p> Home</a>
+        <a href="destination.html"><p>02</p> Destination</a>
+        <a href="crew.html"><p>03</p> Crew</a>
+        <a href="technology.html"><p>04</p> Technology</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class = "planet-box">
+        <p>01 Pick your Destination</p>
+        <div class = "planet">
+          <img src="./assets/destination/image-moon.png" alt="">
+        </div>
+      </div>
+      <div class = "planet-text">
+        <div class = "planet-menu">
+          <p id = "moon" href="">Moon</p>
+          <p id = "mars" href="">Mars</p>
+          <p id = "europa" href="">Europa</p>
+          <p id = "titan" href="">Titan</p>
+        </div>
+        <h1>Moon</h1>
+        <p id = "description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <div class="planet-stat">
+          <div class="stat-1">
+            <p>Avg. distance</p>
+            <h4>384,400 km</h4>
+          </div>
+          <div class="stat-2">
+            <p>Est. travel time</p>
+            <h4>3 days</h4>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <script src="scripts/script-destination.js"></script>
+</body>
+</html>

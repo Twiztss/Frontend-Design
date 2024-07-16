@@ -14,6 +14,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    body {
+      background-image: url("./assets/home/background-home-desktop.jpg");
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media screen and (max-width:768px) {
+    
+    body {
+        background: url("./assets/home/background-home-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+
+    .planet {
+      background-color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,23 +43,26 @@
       <a href="index.html"><img class = "logo" src="./assets/shared/logo.svg" alt=""></a>
       <hr>
       <div>
-        <a href=""><p>01</p> Home</a>
-        <a href=""><p>02</p> Destination</a>
-        <a href=""><p>03</p> Crew</a>
-        <a href=""><p>04</p> Technology</a>
+        <a href="index.html"><p>01</p> Home</a>
+        <a href="destination.html"><p>02</p> Destination</a>
+        <a href="crew.html"><p>03</p> Crew</a>
+        <a href="technology.html"><p>04</p> Technology</a>
       </div>
     </div>
     <div class="content">
-      <div>
+      <div class = "planet-text">
         <h3>So, you want to travel to</h3> 
         <h1>Space</h1>
         <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
           outer space and not hover kind of on the edge of it. Well sit back, and relax 
           because we’ll give you a truly out of this world experience!</p>
       </div>
-      <div class = "planet"><p>Explore</p></div>
+      <div class = "planet-box">
+        <div class = "planet"><p>Explore</p></div>
+      </div>
     </div>   
   </div>
-  <script src = "script.js"></script>
+
+  <script src = "scripts/script.js"></script>
 </body>
 </html>

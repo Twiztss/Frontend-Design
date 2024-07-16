@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    body {
+      background-image: url("./assets/technology/background-technology-desktop.jpg");
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media screen and (max-width:768px) {
+    
+    body {
+        background: url("./assets/technology/background-technology-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html"><img class = "logo" src="./assets/shared/logo.svg" alt=""></a>
+      <hr>
+      <div>
+        <a href="index.html"><p>01</p> Home</a>
+        <a href="destination.html"><p>02</p> Destination</a>
+        <a href="crew.html"><p>03</p> Crew</a>
+        <a href="technology.html"><p>04</p> Technology</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="tech-text">
+        <div class="tech-pagination">
+          
+        </div>
+        <p>03 Space launch 101</p>
+        <h3>The terminology...</h3> 
+        <h1>Space capsule</h1>
+        <p>
+          A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+          capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+          you'll spend your time during the flight. It includes a space gym, cinema, 
+          and plenty of other activities to keep you entertained.
+        </p>
+      </div>
+      <div class = "tech-box">
+          <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="">
+      </div>
+    </div>   
+  </div>
+  <script src="scripts/script-crew.js"></script>
+</body>
+</html>
