@@ -29,74 +29,171 @@ body {
     background-color: var(--Rose-100);
 }
 
-section {
+section:first-child {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
+}
+
+section:nth-child(2) {
+    width: 30%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.container {
+    margin: 2.5% 5%;
+    display: flex;
 }
 
 .content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 2.5%;
 }
 
-.container {
-    margin: 10%;
+.product-card {
+    display: flex;
+    flex-direction: column;
+    margin-block: 10px;
+    width: 30%;
+}
+
+.product-card > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.add-cart-btn {
+    align-self: center;
+    background-color: var(--Rose-50);
+    border-radius: 25px;
+    border: 1px solid var(--Red);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 10px;
+    justify-content: center;
+    margin-top: -10%;
+    padding: 0px 20px;
+}
+
+#icon {
+    width:20px;
+    aspect-ratio: 1;
+}
+
+.product-text {
+    margin-top: 10px;
+    font-size: 16px;
+}   
+
+.product-text > p {
+    margin-block: 5px;
+}
+
+#product-type {
+    color: var(--Rose-400);
+}
+
+#product-title {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+#product-price, #cart-title {
+    font-weight: 800;
+    color: var(--Red);
+}
+
+#cart {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5% 15%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-icon {
+    width: 50%;
+    aspect-ratio: 1;
+    align-self: center;
+}
+
+#cart-text {
+    align-self: center;
+    font-weight: 500;
+    color: var(--Rose-500);
+    font-size: 14px;
+}
+
+/* Image src */
+
+#waffle-img {
+    content: url("./assets/images/image-waffle-desktop.jpg");
+}
+
+#brulee-img {
+    content: url("./assets/images/image-creme-brulee-desktop.jpg");
+}
+
+#macaron-img {
+    content: url("./assets/images/image-macaron-desktop.jpg");
+}
+
+#tiramisu-img {
+    content: url("./assets/images/image-tiramisu-desktop.jpg");
+}
+
+#baklava-img {
+    content: url("./assets/images/image-baklava-desktop.jpg");
+}
+
+#pie-img {
+    content: url("./assets/images/image-meringue-desktop.jpg");
+}
+
+#cake-img {
+    content: url("./assets/images/image-cake-desktop.jpg");
+}
+
+#brownie-img {
+    content: url("./assets/images/image-brownie-desktop.jpg");
+}
+
+#panna-img {
+    content: url("./assets/images/image-panna-cotta-desktop.jpg") ;
 }
 
 @media screen and (max-width : 376px) {
     .container {
         margin: 3.75% 7.5%;
-    }
-
-    h1 {
-        font-size: 32px
+        flex-direction: column;
     }
 
     .content {
         flex-direction: column;
     }
 
-    section {
+    section:first-child, section:nth-child(2) {
         width: 100%;
     }
-
+    
     .product-card {
-        display: flex;
-        flex-direction: column;
-        margin-block: 10px;
-    }
-
-    .product-card > img {
         width: 100%;
-        border-radius: 10px;
     }
 
     .add-cart-btn {
-        align-self: center;
-        background-color: var(--Rose-50);
         border-radius: 25px;
-        border: 1px solid var(--Red);
-        cursor: pointer;
-        display: flex;
-        font-size: 16px;
-        font-weight: 700;
-        gap: 10px;
-        justify-content: center;
-        margin-top: -10%;
         padding: 0px 25px;
     }
-
-    #icon {
-        width:20px;
-        aspect-ratio: 1;
-    }
-
-    .product-text {
-        margin-top: 10px;
-        font-size: 16px;
-    }   
     
     .product-text > p {
         margin-block: 5px;
@@ -111,15 +208,8 @@ section {
         font-size: 16px;
     }
 
-    #product-price, #cart-title {
-        font-weight: 800;
-        color: var(--Red);
-    }
-
     #cart {
-        margin-top: 20px;
-        background-color: white;
-        border-radius: 10px;
+        width: 90%;
         padding: 3.75% 5%;
     }
 
@@ -127,17 +217,42 @@ section {
         font-size: 20px;
     }
 
-    #cart-icon {
-        width: 50%;
-        aspect-ratio: 1;
-        align-self: center;
+    /* Image src */
+
+    #waffle-img {
+        content: url("./assets/images/image-waffle-mobile.jpg");
     }
 
-    #cart-text {
-        align-self: center;
-        font-weight: 500;
-        color: var(--Rose-500);
-        font-size: 14px;
+    #brulee-img {
+        content: url("./assets/images/image-creme-brulee-mobile.jpg");
+    }
+
+    #macaron-img {
+        content: url("./assets/images/image-macaron-mobile.jpg");
+    }
+
+    #tiramisu-img {
+        content: url("./assets/images/image-tiramisu-mobile.jpg");
+    }
+
+    #baklava-img {
+        content: url("./assets/images/image-baklava-mobile.jpg");
+    }
+
+    #pie-img {
+        content: url("./assets/images/image-meringue-mobile.jpg");
+    }
+
+    #cake-img {
+        content: url("./assets/images/image-cake-mobile.jpg");
+    }
+
+    #brownie-img {
+        content: url("./assets/images/image-brownie-mobile.jpg");
+    }
+
+    #panna-img {
+        content: url("./assets/images/image-panna-cotta-mobile.jpg") ;
     }
 }
 
