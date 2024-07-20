@@ -1,8 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
 body {
     color: white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Barlow;
+}
+
+/* Typography */
+
+#space-intro {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+}
+
+#space-title {
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 10px 0px 10px;
+}
+
+.space-subtitle {
+    display: flex;
+    gap: 10px;
+    margin-left: 12.5%;
+    margin-top: 1.25%;
+    align-self: flex-start;
+}
+
+.crew-subtitle {
+    margin-block: 10px;
+    margin-left: 11.25%;
+}
+
+#space-subtitle, #space-number {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+}
+
+#space-number {
+    color: gray;
+    font-weight: 800;
+}
+
+#space-subtitle {
+    color: white;
+}
+
+#role {
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    margin: 10px 0px 10px;
+}
+
+#full-name, #tech-name {
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 10px 0px 10px;
+}
+
+#space-desc {
+    width: 70%;
+    color :#D0D6F9;
+    line-height: 1.6;
+}
+
+#bio, #tech-desc {
+    color :#D0D6F9;
+    line-height: 1.6;
 }
 
 .container {
@@ -17,11 +102,18 @@ body {
 }
 
 hr {
-    border: 0.25px solid gray;
-    width: 37.5%;
+    border: 0.25px solid #D0D6F9;
+    width: 30%;
     position: fixed;
-    margin-left: 7.5%;
+    margin-left: 10%;
     z-index: 1;
+}
+
+#space-divider {
+    width: 75%;
+    margin-block: 37.5px 12.5px;
+    background-color: #D0D6F9;
+    height: 0.25px;
 }
 
 .navbar {
@@ -30,6 +122,13 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 2.5%;
+
+    /* Font */
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
 .navbar > img {
@@ -44,7 +143,7 @@ hr {
 
 .navbar > div {
     display: flex;
-    background-color: gray;
+    background-color: #D0D6F9;
     padding: 0% 10%;
     justify-content: center;
     gap: 75px;
@@ -54,28 +153,54 @@ hr {
 }
 
 .content {
-    margin : 2.5% 10%;
+    margin : 10% 10% 0% 10%;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
 }
 
+.increased {
+    width: 100%;
+}
+
+.reduced {
+    margin: -1.75% -5% 0% 10%;
+}
+
 .planet-text, .crew-text, .tech-text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.planet-text {
+    margin-top: 2.5%;
+}
+
+.tech-subtext {
+    display: flex;
+    flex-direction: row;
 }
 
 .planet-box, .crew-box, .tech-box {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.planet-box {
+    align-items: flex-end;
+    width: 45%;
 }
 
 
 .navbar > div > a {
     text-decoration: none;
     color: white;
-    padding-block: 50px;
+    padding-block: 25px;
     height: 100%;
     font-size : 16px;
 
@@ -85,16 +210,19 @@ hr {
     gap: 10px;
 }
 
+.navbar > div > a > p{
+    font-weight: 800;
+}
+
 .navbar > div > a:hover {
     border-bottom: 2.5px solid white;
     transition: 0.5s ease-out;
 }
 
-.planet {
+.planet, .planet-dest {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    aspect-ratio: 1;
     border-radius: 50%;
     color: black;
     font-weight: 800;
@@ -102,26 +230,31 @@ hr {
     background-size: cover;
 }
 
+.planet {
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.planet-dest > img {
+    width: 75%;
+    aspect-ratio: 1;
+}
+
 .planet > img {
     width: 100%;
     aspect-ratio: 1;
 }
 
+.tech-box > img {
+    width: 80%;
+    aspect-ratio: 1;
+    content: url("../assets/technology/image-space-capsule-portrait.jpg");
+}
+
 .planet-menu {
     display: flex;
     justify-content: space-between;
-}
-
-.planet-menu > p {
-    text-decoration: none;
-    color: white;
-    padding-block: 5px;
-    font-size : 16px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    width: 60%;
 }
 
 .planet-menu > p:hover {
@@ -132,7 +265,7 @@ hr {
 
 .planet-stat {
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .stat-1, .stat-2 {
@@ -141,12 +274,21 @@ hr {
     justify-content: center;
 }
 
+#space-stat {
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: -30px 0px;
+}
+
 .inactive {
     display: none;
 }
 
 .crew-box > img {
-    width: 100%;
+    width: 75%;
 }
 
 .pagination {
@@ -154,11 +296,6 @@ hr {
     display: flex;
     gap: 10px;
     cursor: pointer;
-}
-
-.tech-pagination {
-    display: flex;
-    flex-direction: column;
 }
 
 .dot {
@@ -171,15 +308,17 @@ hr {
 .tech-pagination {
     display: flex;
     flex-direction: column;
-    padding: 2.5%;
+    justify-content: flex-start;
+    padding: 5% 2.5%;
     gap: 20px;
+    margin-right: 20px;
 }
 
 .tech-btn {
     border: 2px solid white;
     border-radius: 50%;
     aspect-ratio: 1;
-    width: 50px;
+    width: 75px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -194,6 +333,17 @@ hr {
         align-items: center;
         gap: 50px;
         justify-self: center ;
+    }
+
+    .space-subtitle {
+        justify-content: center;
+        align-self: center;
+        margin: 0%;
+        margin-block: 25px 50px;
+    }
+
+    #space-subtitle, #space-number {
+        font-size: 20px;
     }
 
     .navbar > div {
@@ -220,14 +370,38 @@ hr {
     .planet-menu {
         justify-content: center;
         gap: 20px;
+        width: 100%;
     }
 
-    .planet-box, .crew-box, .tech-box {
+    #space-divider {
+        width: 100%;
+    }
+    .planet-box, .crew-box {
         width: 75%;
+        align-items: center;
+    }
+
+    .tech-box {
+        width: 100%;
+        align-items: center;
     }
 
     .planet-text, .crew-text, .tech-text {
         width: 75%;
+        margin-top: 0%;
+    }
+
+    .tech-subtext {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #space-desc {
+        width: 100%;
+    }
+
+    .reduced {
+        margin: 0% 10%;
     }
 
     .planet {
@@ -235,7 +409,22 @@ hr {
         width: 75%;
         aspect-ratio: 1;
         align-self: center;
-    }   
+    }
+
+    .planet-dest > img {
+        width: 100%;
+    }
+
+    .crew-box > img {
+        width: 100%;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    
+    .tech-box > img {
+       display: none;
+    }
 
     .planet-stat {
         justify-content: center;
@@ -258,5 +447,6 @@ hr {
 
     .tech-pagination {
         flex-direction: row;
+        justify-content: center;
     }
 }

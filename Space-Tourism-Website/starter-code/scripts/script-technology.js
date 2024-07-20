@@ -53,5 +53,5 @@ spaceBtn.addEventListener("click", () => {
 let setTech = (data) => {
     techName.innerHTML = data.name
     techDescription.innerHTML = data.description
-    techIcon.src = data.images.landscape
+    techIcon.style.content = "url(" + data.images.portrait + ")"
 }

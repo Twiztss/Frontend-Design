@@ -1,6 +1,6 @@
-const planetIcon = document.querySelector(".planet > img")
+const planetIcon = document.querySelector(".planet-dest > img")
 const title = document.querySelector(".planet-text h1")
-const description = document.querySelector("#description")
+const description = document.querySelector("#space-desc")
 const avgDist = document.querySelector(".stat-1 h4")
 const travelTime = document.querySelector(".stat-2 h4")
 
