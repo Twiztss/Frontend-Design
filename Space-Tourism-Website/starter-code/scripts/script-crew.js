@@ -2,11 +2,12 @@ const fullName = document.querySelector("#full-name")
 const role = document.querySelector("#role")
 const bio = document.querySelector("#bio")
 const pfp = document.querySelector(".crew-box > img")
+const pfpMobile = document.querySelector(".crew-box-mobile")
 
 const commanderBtn = document.querySelector("#commander")
 const specialistBtn = document.querySelector("#specialist")
 const pilotBtn = document.querySelector("#pilot")
-const enginnerBtn = document.querySelector("#engineer")
+const engineerBtn = document.querySelector("#engineer")
 
 const crewData = {"crew": [
     {
@@ -53,19 +54,27 @@ const pilot = crewData[2]
 const engineer = crewData[3]
 
 commanderBtn.addEventListener("click", ( )=> {
+    removeActive(specialistBtn, pilotBtn, engineerBtn)
     setCrew(commander)
+    setActive(commanderBtn)
 })
 
 specialistBtn.addEventListener("click", () => {
-  setCrew(specialist)
+    removeActive(commanderBtn, pilotBtn, engineerBtn)
+    setCrew(specialist)
+    setActive(specialistBtn)
 })
 
 pilotBtn.addEventListener("click", () => {
-  setCrew(pilot)
+    removeActive(commanderBtn, specialistBtn, engineerBtn)
+    setCrew(pilot)
+    setActive(pilotBtn)
 })
 
-enginnerBtn.addEventListener("click", () => {
-  setCrew(engineer)
+engineerBtn.addEventListener("click", () => {
+    removeActive(commanderBtn, specialistBtn, pilotBtn)
+    setCrew(engineer)
+    setActive(engineerBtn)
 })
 
 
@@ -74,6 +83,17 @@ let setCrew = (data) => {
     fullName.innerHTML = data.name
     bio.innerHTML = data.bio
     pfp.src = data.images.png
+    pfpMobile.style.content = "url(" + data.images.png + ")"
+}
+
+let setActive = (elem) => {
+  elem.classList.add("active")
+}
+
+let removeActive = (elem1, elem2, elem3) => {
+  elem1.classList.remove("active")
+  elem2.classList.remove("active")
+  elem3.classList.remove("active")
 }
 
 

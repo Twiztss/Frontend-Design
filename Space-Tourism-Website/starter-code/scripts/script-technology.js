@@ -1,4 +1,5 @@
 const techIcon = document.querySelector(".tech-box > img")
+const techIconMobile = document.querySelector(".tech-box-mobile")
 const techName = document.querySelector("#tech-name")
 const techDescription = document.querySelector("#tech-desc")
 
@@ -38,15 +39,21 @@ const spacePort = techData[1]
 const spaceV = techData[2]
 
 launchBtn.addEventListener("click", () => {
+    removeActive(portBtn, spaceBtn)  
     setTech(launchV)
+    setActive(launchBtn)
 })
 
 portBtn.addEventListener("click", () => {
+    removeActive(launchBtn, spaceBtn)
     setTech(spacePort)
+    setActive(portBtn)
 })
 
 spaceBtn.addEventListener("click", () => {
+    removeActive(launchBtn,portBtn)
     setTech(spaceV)
+    setActive(spaceBtn)
 })
 
 
@@ -54,4 +61,14 @@ let setTech = (data) => {
     techName.innerHTML = data.name
     techDescription.innerHTML = data.description
     techIcon.style.content = "url(" + data.images.portrait + ")"
+    techIconMobile.style.content = "url(" + data.images.landscape + ")"
+}
+
+let setActive = (elem) => {
+  elem.classList.add("active")
+}
+
+let removeActive = (elem1, elem2) => {
+  elem1.classList.remove("active")
+  elem2.classList.remove("active")
 }
