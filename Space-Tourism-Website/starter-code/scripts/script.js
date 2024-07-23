@@ -1,16 +1,13 @@
 // For testing querySelectors
-const explore = document.querySelector(".planet")
-const title = document.querySelector(".content .div h1")
+const hamburger = document.querySelector("#hamburger")
+const sidebar = document.querySelector(".sidebar")
+const closeBtn = document.querySelector(".sidebar > img")
 
-// For testing DOM
-explore.addEventListener("click", () => {
-    // title.innerHTML = "Titan"
-    explore.innerHTML = ""
-    explore.classList.add("titan")
-    setTimeout( () => {
-        explore.classList.remove("titan")
-        // title.innerHTML = "SPACE"
-        explore.innerHTML = "Explore"
-    },1000)
+hamburger.addEventListener("click", () => {
+    sidebar.style.display = "flex"
+})
+
+closeBtn.addEventListener("click", () => {
+    sidebar.style.display = "none"
 })
 
