@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+
+:root {
+    --Tomato : hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Dark-Slate-Grey);
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1.25%;
+    border-radius: 10px;
+    width: 750px;
+    height: 500px;
+    margin-top: 7.5%;
+}
+
+.container-success {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    aspect-ratio: 1;
+    border-radius: 25px;
+    margin-top: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-text, .content-success {
+    color: var(--Dark-Slate-Grey);
+    line-height: 20px;
+    width: 47.5%;
+    margin-left: 2.5%;
+}
+
+.content-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.inactive {
+    display: none;
+}
+
+#illust-desktop {
+    display: block;
+    content: url("../assets/images/illustration-sign-up-desktop.svg");
+    height: 100%;
+}
+
+#illust-mobile {
+    display: none;
+}
+
+#illust-success {
+    width: 48px;
+    aspect-ratio: 1;
+}
+
+#icon {
+    width: 20px;
+    aspect-ratio: 1;
+    align-items: flex-start;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-success > div > h1 {
+    line-height: 40px;
+}
+
+h1 {
+    font-family: Roboto-Bold;
+    font-weight: 900;
+    line-height: 30px;
+    font-size: 48px;
+}
+
+#icon-text {
+    display: flex;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 37.5px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: -20px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--Grey);
+}
+
+.content-success > button {
+    margin-top: -10%;
+}
+
+button, input[type = "submit"] {
+    padding: 15px 20px;
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    border-radius: 7.5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+}
+
+button:hover, input[type = "submit"]:hover {
+    background: linear-gradient(90deg, var(--Tomato), #f7b733);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.8),
+    0 0 20px rgba(247, 183, 51, 0.8);
+}
+
+@media screen and (max-width : 375px) {
+    body {
+        background-color: white;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container-success {
+        margin-top: 50%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text, .content-success {
+        margin-top: -5%;
+        width: 85%;
+        color: var(--Dark-Slate-Grey);
+        line-height: 20px;
+        height: 100%;
+        margin-left: 0%;
+    }
+    
+    .content-success {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content-success > button {
+        margin-top: 75%;
+    }
+
+    #illust-mobile {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        content: url("../assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    #illust-desktop {
+        display: none;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-family: Roboto-Bold;
+        font-weight: 900;
+        line-height: 30px;
+        font-size: 32px;
+    }
+
+    form {
+        margin-top: 10%;
+        gap: 25px;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width : 450px) {
+    body {
+        background-color: white;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container-success {
+        margin-top: 50%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text, .content-success {
+        margin-top : -1.25%;
+        width: 85%;
+        color: var(--Dark-Slate-Grey);
+        line-height: 20px;
+        height: 100%;
+        margin-left: 0%;
+    }
+    
+    .content-success {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content-success > button {
+        margin-top: 75%;
+    }
+
+    #illust-mobile {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        content: url("../assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    #illust-desktop {
+        display: none;
+    }
+
+    h1 {
+        font-family: Roboto-Bold;
+        font-weight: 900;
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    form {
+        margin-top: 12.5%;
+        gap: 30px;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width : 451px ) and (max-width : 1080px) {
+    .container {
+        margin-top: 17.5%;
+    }
+
+    .container-success {
+        margin-top: 15%;
+    }
+}
