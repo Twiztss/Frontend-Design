@@ -131,6 +131,22 @@ input {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid var(--Grey);
+    outline: none;
+}
+
+.notif {
+    color: var(--Tomato);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 16.25%;
+    display: none;
+}
+
+.error {
+    background-color: #FFCCCC;
+    border-color: var(--Tomato);
+    color: var(--Tomato);
 }
 
 .content-success > button {
@@ -227,6 +243,10 @@ button:hover, input[type = "submit"]:hover {
         margin-top: 10%;
         gap: 25px;
         margin-bottom: 10%;
+    }
+
+    .notif {
+        margin-left: 50%;
     }
 }
 
