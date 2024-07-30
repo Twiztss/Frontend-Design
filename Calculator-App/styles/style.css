@@ -1,0 +1,214 @@
+:root {
+    /* Background */
+    --Background-Main : hsl(222, 26%, 31%);
+    --Background-Button-Group : hsl(223, 31%, 20%);
+    --Background-Display : hsl(224, 36%, 15%);
+
+    /* Keys */
+    --Background-Special-Button: hsl(225, 21%, 49%);
+    --Background-Special-Button-Shadow : hsl(224, 28%, 35%);
+
+    --Red-Toggle-Button : hsl(6, 63%, 50%);
+    --Dark-Toggle-Button-Shadow : hsl(6, 70%, 34%);
+
+    --Background-Normal-Button : hsl(30, 25%, 89%);
+    --Background-Normal-Button-Shadow : hsl(28, 16%, 65%);
+
+    /* Text */
+    --Text-Button: hsl(221, 14%, 31%);
+    --Special-Text: hsl(0, 0%, 100%);
+    --White : hsl(0, 0%, 100%)
+}
+
+body {
+    background-color: var(--Background-Main);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    padding: 2.5% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    color: var(--Special-Text);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.theme-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-option {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: -5px;
+}
+
+p {
+    color: var(--Special-Text);
+    font-weight: 800;
+}
+
+ /* ==============================================================  */
+
+.toggle-switch {
+    background-color: var(--Background-Button-Group);
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5px 5px;
+    border-radius: 25px;
+}
+
+.slider {
+    position: absolute;
+    background-color: var(--Red-Toggle-Button);
+    border-radius: 50%;
+    width: 20px;
+    aspect-ratio: 1;
+    content: "";
+    margin-left: 5px;
+}
+
+input[type = "radio"] {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.slider:hover {
+    margin-right: -10%;
+}
+
+ /* ==============================================================  */
+
+.display {
+    align-items: center;
+    align-self : center;
+    background-color: var(--Background-Display);
+    border-radius: 10px;
+    color: var(--Special-Text);
+    display: flex;
+    font-size: 32px;
+    font-weight: 800;
+    justify-content: flex-end;
+    padding: 7.5%;
+    width: 85%;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--Background-Button-Group);
+    width: 95%;
+    padding: 2.5%;
+    gap: 5%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--Background-Normal-Button);
+    box-shadow: 0px 5px var(--Background-Normal-Button-Shadow);
+    color: var(--Text-Button);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    aspect-ratio: 2.5;
+    margin-block: 2%;
+    border-radius: 7.5px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#delete {
+    background-color: var(--Background-Special-Button);
+    box-shadow: 0px 5px var(--Background-Special-Button-Shadow)
+}
+
+#delete, #reset, #equal {
+    color: var(--White);
+    font-size: 24px;
+}
+
+#reset {
+    background-color: var(--Background-Special-Button);
+    box-shadow: 0px 5px var(--Background-Special-Button-Shadow);
+    width: 45%;
+    aspect-ratio: 0;
+    padding-block: 1.25%;
+}
+
+#equal {
+    background-color: var(--Red-Toggle-Button);
+    box-shadow: 0px 5px var(--Dark-Toggle-Button-Shadow);
+    width: 45%;
+    aspect-ratio: 0;
+    padding-block: 1.25%;
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--Special-Text); }
+.attribution a { color: hsl(228, 45%, 44%); color: var(--Red-Toggle-Button);}
+
+@media screen and (max-width : 376px) {
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .btn-group {
+        width: 90%;
+        padding: 5%;
+        gap: 5%;
+    }
+
+    button {
+        width: 20%;
+        aspect-ratio: 1;
+        margin-block: 5%;
+        border-radius: 7.5px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    #delete, #reset, #equal {
+        font-size: 16px;
+    }
+
+    #reset, #equal {
+        width: 45%;
+        aspect-ratio: 0;
+        padding-block: 7.5%;
+    }
+}

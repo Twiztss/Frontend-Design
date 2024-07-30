@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="navbar">
+        <p id = "logo">CALC</p>
+        <div class = "theme-selector">
+          <div class = "theme-option">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <p style = "position: absolute; margin-left: -60px; margin-top: 40px;">Theme</p>
+          <div class = "toggle-switch">
+            <input type="radio" name="theme-1" id="theme-1">
+            <input type="radio" name="theme-2" id="theme-2">
+            <input type="radio" name="theme-3" id="theme-3">
+            <div class="slider"></div>
+          </div>
+        </div>        
+      </div>
+      <div class="display">0</div>
+      <div class="btn-group">
+        <button id = "7">7</button>
+        <button id = "8">8</button>
+        <button id = "9">9</button>
+        <button id = "delete">DEL</button>
+        <button id = "4">4</button>
+        <button id = "5">5</button>
+        <button id = "6">6</button>
+        <button id = "operator">+</button>
+        <button id = "1">1</button>
+        <button id = "2">2</button>
+        <button id = "3">3</button>
+        <button id = "operator">-</button>
+        <button id = ".">.</button>
+        <button id = "0">0</button>
+        <button id = "operator">/</button>
+        <button id = "operator">x</button>
+        <button id = "reset">RESET</button>
+        <button id = "equal">=</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src = "./scripts/script.js"></script>
+</body>
+</html>
