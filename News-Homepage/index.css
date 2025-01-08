@@ -25,9 +25,18 @@ nav > div {
     gap: 50px;
 }
 
+nav > div > img {
+    display: none;
+}
+
 nav > div > * {
+    cursor : pointer;
     color: hsl(233, 8%, 79%);
     font-weight: 400;
+}
+
+.bg {
+    display: none;
 }
 
 #icon {
@@ -35,7 +44,7 @@ nav > div > * {
     aspect-ratio: 1.5;
 }
 
-#menu {
+.burger {
     display: none;
     width: 15%;
     aspect-ratio: 3;
@@ -105,8 +114,8 @@ article > text > detail > p {
 }
 
 article > text > detail >button {
-    background-color: hsl(5, 85%, 63%);
     border: none;
+    background-color: hsl(5, 85%, 63%);
     padding: 2.5% 5%;
     font-weight: 800;
     width: 50%;
@@ -190,8 +199,8 @@ sub-article > div > p {
 /* ================ ATRRIBUTION ============== */
 
 .attribution {
-    font-size: 11px;
     text-align: center;
+    font-size: 11px;
     margin-top: 10px;
 }
 
@@ -212,13 +221,43 @@ sub-article > div > p {
 
     nav > div {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: hsl(36, 100%, 99%);
+        margin-left: 30%;
+        width: 55%;
+        padding: 175% 0% 75% 10%;
+        gap: 5%;
+    }
+
+    nav > div > img {
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin: -35% 15% 25% -5%;
+        width: 12.5%;
+        aspect-ratio: 1;
+    }
+
+    nav > div > * {
+        color: hsl(240, 100%, 5%);
+        font-size: 22px;
+    }
+
+    .bg {
+        display: none;
+        width: 90%;
+        margin-left: -5%;
+        height: 100dvh;
+        background-color: hsl(240, 100%, 5%);
+        opacity: 0.5;
     }
     
     #icon {
         width: 12.5%;
     }
 
-    #menu {
+    .burger {
         display: block;
         cursor: pointer;
     }
@@ -323,6 +362,3 @@ sub-article > div > p {
         margin-top: -10px;
     }
 }
-
-
-
