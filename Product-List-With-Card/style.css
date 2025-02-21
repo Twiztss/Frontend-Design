@@ -136,6 +136,53 @@ h1 {
     font-size: 14px;
 }
 
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-list {
+    width: 100%;
+    display: flex;
+    justify-content: between;
+}
+
+.cart-list-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.cart-list-text > p {
+    font-weight: 700;
+}
+
+.cart-list-stat {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: -24px;
+}
+
+.cart-list-amount {
+    color: var(--Red);
+    font-weight: 700;
+}
+
+.cart-list-price {
+    color: var(--Rose-400);
+}
+
+.cart-list-total {
+    color: var(--Rose-400);
+    font-weight: 700;
+}
+
 /* Image src */
 
 #waffle-img {
