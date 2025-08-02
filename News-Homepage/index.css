@@ -55,17 +55,17 @@ nav > div > * {
 wrapper {
     display: flex;
     width: 100%;
-    gap: 25px;
+    gap: 30px;
 }
 
 main, section {
     display: flex;
-    width: 70%;
+    width: 65%;
 }
 
 section {
     justify-content: space-between;
-    gap: 5%;
+    gap: 30px;
     width: 100%;
 }
 
@@ -74,7 +74,7 @@ section {
 article {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 #article-img {
@@ -83,117 +83,160 @@ article {
     object-fit: cover;
 }
 
+@media screen and (width < 550px) {
+    #article-img {
+        content: url('./assets/images/image-web-3-mobile.jpg');
+        aspect-ratio: 1.2;
+    }
+}
+
 article > text {
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
-    gap: 15px;
+    gap: 60px;
 }
 
 article > text > h1 {
-    font-size: 60px;
-    line-height: 52px;
+    font-size: 56px;
+    line-height: 1;
     font-weight: 800;
-    width: 37.5%;
+    width: 40%;
     margin: 0%;
+    color: hsl(240, 100%, 5%);
 }
 
 article > text > detail {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 60%;
+    gap: 30px;
+    width: 55%;
 }
 
 article > text > detail > p {
-    width: 90%;
-    font-size: 18px;
+    width: 100%;
+    font-size: 15px;
     color: hsl(236, 13%, 42%);
-    margin-top: -5px;
-    line-height: 25px;
+    margin: 0;
+    line-height: 1.7;
 }
 
 article > text > detail >button {
     border: none;
     background-color: hsl(5, 85%, 63%);
-    padding: 2.5% 5%;
-    font-weight: 800;
-    width: 50%;
+    padding: 15px 30px;
+    font-weight: 700;
+    width: fit-content;
+    color: hsl(36, 100%, 99%);
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+article > text > detail >button:hover {
+    background-color: hsl(240, 100%, 5%);
 }
 
 /* ========== SIDEBAR + ASIDE ========== */
 
 sidebar {
     background-color: hsl(240, 100%, 5%);
-    width: 25%;
-    padding: 1.25%;
+    width: 30%;
+    padding: 30px 25px;
 }
 
 sidebar > h1 {
     color: hsl(35, 77%, 62%);
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
 }
 
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+aside:last-child {
+    padding-bottom: 0;
 }
 
 aside > h2 { 
     color: hsl(36, 100%, 99%);
     font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+aside > h2:hover {
+    color: hsl(35, 77%, 62%);
 }
 
 aside > p {
     color : hsl(233, 8%, 79%);
-    margin-top: 0px;
-    font-size: 14px;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 aside > hr {
     width: 100%;
-    border: 1px hsl(236, 13%, 42%) solid;
+    border: none;
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    margin: 0;
 }
 
 /* ========== SECTION + SUB-ARTICLE ========== */
 
 sub-article {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 25px;
+    align-items: flex-start;
 }
 
 sub-article > img {
-    width: 37.5%;
+    width: 100px;
+    height: 127px;
+    object-fit: cover;
 }
 
 sub-article > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 50px ;
-    width: 65%;
+    gap: 8px;
+    flex: 1;
 }
 
 sub-article > div > h1 {
     font-size: 32px;
-    font-weight: 800;
-    margin-top: 10px;
-    color: hsl(5, 85%, 63%);
+    font-weight: 700;
+    margin: 0;
+    color: hsl(233, 8%, 79%);
 }
 
 sub-article > div > h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 800;
-    margin-top: -10px;
+    margin: 0;
     color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+sub-article > div > h2:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 sub-article > div > p {
-    font-size: 16px;
-    margin-top: -10px;
+    font-size: 15px;
+    margin: 0;
     color: hsl(236, 13%, 42%);
+    line-height: 1.6;
 }
 
 /* ================ ATRRIBUTION ============== */
@@ -280,14 +323,14 @@ sub-article > div > p {
     /* ========== ARTICLE ========== */
 
     article {
-        gap: 10px;
+        gap: 20px;
     }
 
     article > text > h1 {
-        font-size: 45px;
-        line-height: 45px;
-        margin-top: 5% ;
-        width: 75%;
+        font-size: 40px;
+        line-height: 1;
+        margin: 0;
+        width: 100%;
     }
 
     #article-img {
@@ -295,7 +338,7 @@ sub-article > div > p {
     }
 
     article > text {
-        flex-direction: column ;
+        flex-direction: column;
         gap: 20px;
         width: 100%;
     }
@@ -305,60 +348,65 @@ sub-article > div > p {
     }
 
     article > text > detail > p {
-        width: 80%;
+        width: 100%;
         font-size: 15px;
-        line-height: 25px;
+        line-height: 1.7;
     }
 
     article > text > detail > button {
-        padding: 5% 12.5%;
-        width: 50%;
+        padding: 15px 30px;
+        width: fit-content;
     }
 
     /* ========== SIDEBAR + ASIDE ========== */
 
     sidebar {
-        width: 90%;
-        padding: 0% 5% 5% 5%;
+        width: 100%;
+        padding: 25px 20px;
     }
 
     sidebar > h1 {
-        font-size: 28px;
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    aside {
+        gap: 20px;
+        padding-bottom: 25px;
     }
 
     aside > h2 { 
-        font-size: 16px;
+        font-size: 20px;
     }
 
     aside > p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /* ========== SECTION + SUB-ARTICLE ========== */
 
+    sub-article {
+        gap: 20px;
+    }
+
     sub-article > img {
-        width: 30%;
+        width: 100px;
+        height: 127px;
     }
 
     sub-article > div {
-        width: 65%;
-        margin-left: 25px ;
+        gap: 8px;
     }
 
     sub-article > div > h1 {
         font-size: 32px;
-        font-weight: 800;
-        margin-top: 10px;
     }
 
     sub-article > div > h2 {
-        font-size: 20px;
-        font-weight: 800;
-        margin-top: -10px;
+        font-size: 18px;
     }
 
     sub-article > div > p {
-        font-size: 16px;
-        margin-top: -10px;
+        font-size: 15px;
     }
 }
